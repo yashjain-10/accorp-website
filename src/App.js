@@ -22,7 +22,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
             </Routes>
-            <FloatingContactButton />
+            {/* <FloatingContactButton /> */}
             <BottomBar/>
         </div>
 

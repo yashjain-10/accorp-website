@@ -18,56 +18,40 @@ function NavBar() {
         <header className="bg-white text-white">
 
             {/* Thick bar containing logo, name, and apply now button */}
-            <div className="py-4 px-4 lg:pl-16 lg:py-6 flex flex-col lg:flex-row justify-between">
+            <div className="lg:px-16 lg:py-6 flex flex-col lg:flex-row justify-between">
                 {/*logo side*/}
                 <div className="flex items-center mb-4 lg:mb-0">
                     <p className="text-black text-4xl font-bold">Accorp</p>
                 </div>
                 {/*menu side*/}
-                <div className="flex-col">
+                <div className="flex flex-col justify-end">
                     {/* <span className="  md:text-2xl  text-black font-semibold sm:text-lg ">{Strings.FullName}</span> */}
                     <nav className="">
                         <ul className="flex justify-between">
                             <li>
-                                <a href="/"
-                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">Home</a>
-                            </li>
-                            <li>
                                 <a href="/about"
-                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">About</a>
+                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">About Us</a>
                             </li>
                             <li>
                                 <a href="/programs"
-                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">Courses</a>
+                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">Services</a>
                             </li>
                             <li>
                                 <a href="/facilities"
-                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">Facilities</a>
+                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">Blog</a>
                             </li>
                             <li>
                                 <a href="/rules"
-                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">Rules</a>
-                            </li>
-                            <li>
-                                <a href="/annc"
-                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">Announcements</a>
-                            </li>
-                            <li>
-                                <a href="/faq"
-                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="/contact"
-                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">Contact</a>
+                                   className="block py-2 px-4 rounded-md text-black font-semibold focus:text-white focus:bg-gray-800 hover:text-white hover:bg-gray-800">Contact Us</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
 
                 {/*apply now buttn side*/}
-                <div className={'flex items-center justify-between mt-4 w-full lg:w-fit'}>
+                {/* <div className={'flex items-center justify-between mt-4 w-full lg:w-fit'}> */}
                     {/* Hamburger Icon for small screens */}
-                    <div className="lg:hidden mt-2 ">
+                    {/* <div className="lg:hidden mt-2 ">
                         <button onClick={toggleMenu} className="text-black focus:outline-none">
                             <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                                 <path
@@ -77,11 +61,11 @@ function NavBar() {
                                 />
                             </svg>
                         </button>
-                    </div>
+                    </div> */}
                     {/* <button className="bg-gray-300 hover:bg-gray-200 text-gray-800 font-semibold py-2 px-8 rounded-3xl border border-gray-300 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline">
                         Apply Now &#8594;
                     </button> */}
-                </div>
+                {/* </div> */}
             </div>
 
 
@@ -113,37 +97,20 @@ function NavBar() {
                 </div>
                 <ul className="py-4 ">
                     <li>
-                        <a onClick={closeMenu} href="/"
-                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">Home</a>
-                    </li>
-                    <li>
                         <a onClick={closeMenu} href="/about"
-                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">About</a>
+                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">About Us</a>
                     </li>
                     <li>
                         <a onClick={closeMenu} href="/programs"
-                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">Courses</a>
+                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">Services</a>
                     </li>
                     <li>
                         <a onClick={closeMenu} href="/facilities"
-                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">Facilities</a>
-                    </li>
-                    <li>
-                        <a onClick={closeMenu} href="/rules"
-                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">Rules</a>
-                    </li>
-                    <li>
-                        <a onClick={closeMenu} href="/annc"
-                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">Announcements</a>
-                    </li>
-                    <li>
-                        <a onClick={closeMenu} href="/faq"
-                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">FAQs</a>
+                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-t-2">Blog</a>
                     </li>
                     <li>
                         <a onClick={closeMenu} href="/contact"
-                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-y-2">Contact
-                            Us</a>
+                           className="block py-2 px-4  hover:bg-gray-700 text-white text-center border-y-2">Contact Us</a>
                     </li>
                 </ul>
             </nav>
